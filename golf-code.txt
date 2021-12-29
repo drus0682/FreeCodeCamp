@@ -1,0 +1,34 @@
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  // Only change code below this line
+  if (strokes == 1) {
+    return "Hole-in-one!";
+  }
+  if (strokes == 2) {
+    return "Eagle";
+  }
+  if (strokes == 3) {
+    return "Birdie";
+  }
+  if ((strokes == 5 && par == 5) || (strokes == 4 && par == 4)) {
+    return "Par";
+  }
+  if (strokes == 5 && par == 4) {
+    return "Bogey";
+  }
+  if (strokes == 6) {
+    return "Double Bogey";
+  }
+  if (strokes == 7) {
+    return "Go Home!";
+  }
+  if (strokes == 9) {
+    return "Go Home!";
+  }
+
+  
+  // Only change code above this line
+}
+
+golfScore(5, 4);
